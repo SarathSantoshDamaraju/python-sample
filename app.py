@@ -11,9 +11,9 @@ def hello():
 def sample():
     return 'Hello sample!'
 
-@app.route('/sample/<name>')
-def name(names):
-    return 'Hello!'% names
+@app.route('/sample/<articleid>')
+def api_article(articleid):
+    return 'You are reading ' + articleid
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
